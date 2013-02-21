@@ -57,6 +57,11 @@ label {
   margin-bottom: 5px;
 }
 
+div.no-wrap-label label
+{
+    white-space: nowrap;
+}
+
 // Form controls
 // -------------------------
 
@@ -124,10 +129,10 @@ input[type="color"],
 
   // Focus state
   &:focus {
-    border-color: rgba(82,168,236,.8);
+    //border-color: rgba(237,28,36,.8);
     outline: 0;
     outline: thin dotted \9; /* IE6-9 */
-    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)");
+    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(237,73,30,.8)");
   }
 }
 
@@ -541,9 +546,12 @@ input.search-query {
   padding-right: 14px;
   padding-right: 4px \9;
   padding-left: 14px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
   margin-bottom: 0; // Remove the default margin on all inputs
-  .border-radius(15px);
+  .border-radius(3px);
+  width: 75%;
 }
 
 /* Allow for input prepend/append in search forms */

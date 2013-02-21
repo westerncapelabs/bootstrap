@@ -3,13 +3,29 @@
 // --------------------------------------------------
 
 
-@media (max-width: 767px) {
+ @media (max-width: 480px) {
 
   // Padding to set content in a bit
   body {
     padding-left: 20px;
     padding-right: 20px;
+    margin-top :0px;
   }
+  
+// category menu links - responsive changes
+a:link.navheading, a:visited.navheading, a:hover.navheading, a:active.navheading
+{
+    font-family: @serifFontFamily;
+    font-size: 20px;
+    line-height: 30px;
+    color: @otwbrown;
+    text-decoration:none;
+    height: 45px;
+    white-space: nowrap;
+    border-bottom: 2px dashed #cccccc;
+    display:block;
+}
+
   // Negative indent the now static "fixed" navbar
   .navbar-fixed-top,
   .navbar-fixed-bottom,
@@ -191,3 +207,5 @@
   }
 
 }
+
+

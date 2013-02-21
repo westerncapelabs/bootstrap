@@ -16,6 +16,10 @@
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
+@otwbrown:				#322a1e;
+@backgroundGray:		#dedad5;
+@grayCategoryBorder:    #bfb9b2;
+@categoryBackground:    #d4cdc3;
 
 
 // Accent colors
@@ -32,20 +36,20 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        @white;
-@textColor:             @grayDark;
+@bodyBackground:        @backgroundGray;
+@textColor:             @otwbrown;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #ed1c24;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        "Montserrat", Arial, sans-serif;
+@serifFontFamily:       "Loved by the King", Arial, sans-serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -63,6 +67,7 @@
 // Based on 14px font-size and 20px line-height
 
 @fontSizeLarge:         @baseFontSize * 1.25; // ~18px
+@fontSizeMedium:        @baseFontSize * 0.95; // ~12px
 @fontSizeSmall:         @baseFontSize * 0.85; // ~12px
 @fontSizeMini:          @baseFontSize * 0.75; // ~11px
 
@@ -80,7 +85,7 @@
 @tableBackground:                   transparent; // overall background-color
 @tableBackgroundAccent:             #f9f9f9; // for striping
 @tableBackgroundHover:              #f5f5f5; // for hover
-@tableBorder:                       #ddd; // table and cell border
+@tableBorder:                       #f2f0ec; // table and cell border
 
 // Buttons
 // -------------------------
@@ -94,8 +99,8 @@
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
 
-@btnSuccessBackground:              #62c462;
-@btnSuccessBackgroundHighlight:     #51a351;
+@btnSuccessBackground:              #9ed420;
+@btnSuccessBackgroundHighlight:     #89ba18;
 
 @btnWarningBackground:              lighten(@orange, 15%);
 @btnWarningBackgroundHighlight:     @orange;
@@ -113,7 +118,7 @@
 @inputBorder:                   #ccc;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       @grayLighter;
-@formActionsBackground:         #f5f5f5;
+@formActionsBackground:         #ece9e4;
 @inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
@@ -223,23 +228,23 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
+@heroUnitBackground:              #efebe5;
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
-@warningBackground:       #fcf8e3;
+@warningText:             #a55200;
+@warningBackground:       #f8ecc8;
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 
-@errorText:               #b94a48;
+@errorText:               #9d1411;
 @errorBackground:         #f2dede;
 @errorBorder:             darken(spin(@errorBackground, -10), 3%);
 
-@successText:             #468847;
-@successBackground:       #dff0d8;
+@successText:             #567312;
+@successBackground:       #eeffc6;
 @successBorder:           darken(spin(@successBackground, -10), 5%);
 
 @infoText:                #3a87ad;
@@ -289,12 +294,12 @@
 
 // Fluid grid
 // -------------------------
-@fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
-@fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);
+ @fluidGridColumnWidth:    percentage(@gridColumnWidth/@gridRowWidth);
+ @fluidGridGutterWidth:    percentage(@gridGutterWidth/@gridRowWidth);
 
 // 1200px min
-@fluidGridColumnWidth1200:     percentage(@gridColumnWidth1200/@gridRowWidth1200);
-@fluidGridGutterWidth1200:     percentage(@gridGutterWidth1200/@gridRowWidth1200);
+ @fluidGridColumnWidth1200:     percentage(@gridColumnWidth1200/@gridRowWidth1200);
+ @fluidGridGutterWidth1200:     percentage(@gridGutterWidth1200/@gridRowWidth1200);
 
 // 768px-979px
 @fluidGridColumnWidth768:      percentage(@gridColumnWidth768/@gridRowWidth768);
