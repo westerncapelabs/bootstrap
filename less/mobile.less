@@ -1,130 +1,133 @@
 //Mobile styles
 
-div.search-tiler
+div.search-tiler-mobile
 {
-    background-image:url(../img/header/search_tiler.jpg);
-    border-top: 2px solid #c3bdb5;
-    border-left: 2px solid #c3bdb5;
-    border-bottom: 1px solid #e3e0d9;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 3px;
-    text-align: center;
+    padding: 5px;
     display: block;
-    height: 44px;
+    float: left;
+    position: relative;
+    margin: 3px;
 }
 
 .navbar-search
 {
     margin: 5px 10px;
-    width: 97%;
 }
 
-
-
-a:link.navheading-clothing, a:visited.navheading-clothing, a:active.navheading-clothing
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_clothing_heading2.gif);
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-a:hover.navheading-clothing
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_clothing_heading2_hover.gif);
-    background-repeat: no-repeat;
-    border-right: 2px solid #d2c9bd;
-    background-position: right;
-}
-
-a:link.navheading-food, a:visited.navheading-food, a:active.navheading-food
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_food_heading2.gif);
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-a:hover.navheading-food
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_food_heading2_hover.gif);
-    background-repeat: no-repeat;
-    border-right: 2px solid #d2c9bd;
-    background-position: right;
-}
-
-a:link.navheading-homeware, a:visited.navheading-homeware, a:active.navheading-homeware
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_home_heading2.gif);
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-a:hover.navheading-homeware
-{
-    font-size: 20px;
-    line-height: 20px;
-    height: 100px;
-    background-image:url(../img/icons/ico_home_heading2_hover.gif);
-    background-repeat: no-repeat;
-    border-right: 2px solid #d2c9bd;
-    background-position: right;
-}
-
-a:link.navheading-gifts, a:visited.navheading-gifts, a:active.navheading-gifts
-{
-    font-size: 20px;
-    line-height: 16px;
-    color: @otwbrown;
-    height: 100px;
-    background-image:url(../img/icons/ico_gifts_heading2.gif);
-    background-repeat: no-repeat;
-    background-position: right center;
-}
-a:hover.navheading-gifts
-{
-    font-size: 20px;
-    line-height: 16px;
-    height: 100px;
-    background-image:url(../img/icons/ico_gifts_heading2_hover.gif);
-    background-repeat: no-repeat;
-    background-position: right;
+input.search-query {
+  margin-bottom: 10px;
 }
 
 div.mobile-logo-edge-left
 {
+    position: absolute;
+    width: 16px;
+    height: 40px;
+    left: -16px;
+    top: 0px;
 }
 div.mobile-logo
 {
     text-transform: uppercase;
-    height:28px;
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    background-color: #e31d1a;
+    background-image:url(../img/mobile/mobile-bg-middle.gif);
+    height: 40px;
     text-align: center;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position:relative;
 }
 div.mobile-logo a:link, div.mobile-logo a:hover, div.mobile-logo a:active, div.mobile-logo a:visited
 {
     text-decoration: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 23px;
+    line-height: 40px;
 }
 div.mobile-logo-edge-right
 {
+    position: absolute;
+    width: 16px;
+    height: 40px;
+    right: -16px;
+    top: 0px;
 }
 
+h1
+{
+    font-size: 26px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+}
 
+// Give the tabs something to sit on
+.nav-tabs {
+  padding: 7px;
+}
+
+// Make the list-items overlay the bottom border
+.nav-tabs > li {
+  margin-bottom: -1px;
+ .buttonBackground(@btnBackground, @btnBackgroundHighlight, @grayDark, 0 1px 1px rgba(255,255,255,.75));
+}
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: @baseLineHeight;
+  color: @otwbrown;
+border-color: @grayLighter @grayLighter #ccc;
+.border-radius(0px 0px 0 0);
+  &:hover {
+    border-color: @grayLighter @grayLighter #ccc;
+ color: @otwbrown;
+  }
+}
+// Active state, and it's :hover to override normal :hover
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  color: @gray;
+  background-color: @bodyBackground;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+div.mobile-nav-bg
+{
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #c9c4be;
+    border-right: 1px solid #c9c4be;
+    min-height: 170px;
+    display: block;
+}
+div.mobile-nav-bg ul.nav
+{
+    margin-bottom: 0px;
+}
+
+ul.nav-list li a:link, ul.nav-list li a:hover, ul.nav-list li a:active, ul.nav-list li a:visited
+{
+    color: #333333;
+}
+
+ul.nav-list li.divider
+{
+    border-bottom: 1px dashed #a19c98;
+    margin: 2px 0px;
+}
+
+div.categories-mobile
+{
+    background-color: #e5e5e5;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #c9c4be;
+    border-right: 1px solid #c9c4be;
+    padding: 7px;
+}
 
 
